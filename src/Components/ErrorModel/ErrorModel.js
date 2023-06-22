@@ -2,6 +2,7 @@ import React from 'react'
 import './ErrorModel.css'
 // import Button from '../UI/Button'
 import Card from '../UI/Card'
+import Button from '../UI/Button'
 
 const ErrorModel = (props) => {
   return (
@@ -15,7 +16,7 @@ const ErrorModel = (props) => {
             <p>{props.errorMessage}</p>
         </div>
         <div className="actions">
-            <button type='reset' className='button' onClick={props.onClearMsg}>Okay</button>
+            <Button type='reset' onClick={props.onClearMsg}>Okay</Button>
         </div>
     
 </Card>

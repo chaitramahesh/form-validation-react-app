@@ -19,7 +19,7 @@ const AddUser = (props) => {
     let message = "";
     if (enteredName === "" || enteredAge === "") {
       message = "Please enter a valid name and age (non-empty values)";
-    } else if (enteredAge <= 0) {
+    } else if (+enteredAge <= 0) {
       message = "Please enter a valid age(>0).";
     } else {
       message = "";

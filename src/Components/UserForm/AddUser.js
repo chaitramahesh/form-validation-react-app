@@ -26,9 +26,9 @@ const AddUser = (props) => {
     }
     props.onShowMsg(message);
 
-    if(message === ""){
-    let enteredValues = { enteredName: enteredName, enteredAge: enteredAge };
-    props.onAddUser(enteredValues);
+    if (message === "") {
+      let enteredValues = { enteredName: enteredName, enteredAge: enteredAge };
+      props.onAddUser(enteredValues);
     }
 
     setEnteredName("");
@@ -47,7 +47,6 @@ const AddUser = (props) => {
           name="name"
           pattern="[A-Za-z].{5,}"
           title="Use characters only, length must be 5 or more"
-          
         />
         <label htmlFor="age">Age(Years)</label>
         <input
@@ -57,9 +56,7 @@ const AddUser = (props) => {
           type="number"
           id="age"
         />
-        <Button type="submit">
-          Add User
-        </Button>
+        <Button type="submit">Add User</Button>
       </form>
     </Card>
   );

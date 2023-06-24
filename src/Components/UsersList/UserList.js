@@ -4,14 +4,13 @@ import "./UserList.css";
 import ListItem from "./ListItem";
 
 const UserList = (props) => {
-    return (
-      <Card>
-        <div className="users">
-          <ListItem userData={props.userData}/>
-        </div>
-      </Card>
-    );
-  }
-
+  return (
+    <Card>
+      <div className="users">
+        <ListItem userData={props.userData} />
+      </div>
+    </Card>
+  );
+};
 
 export default UserList;

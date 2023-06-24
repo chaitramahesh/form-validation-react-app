@@ -1,6 +1,6 @@
 import React from "react";
 
-const ListItem = props => {
+const ListItem = (props) => {
   return (
     <ul>
       {props.userData.map((user, index) => (
